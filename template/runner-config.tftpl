@@ -10,7 +10,7 @@ listen_address = "${prometheus_listen_address}"
   ${tls_ca_file}
   clone_url = "${gitlab_clone_url}"
   token = "${runners_token}"
-  executor = "${runners_executor}"
+  executor = "instance"
   environment = ${runners_environment_vars}
   pre_build_script = ${runners_pre_build_script}
   post_build_script = ${runners_post_build_script}
